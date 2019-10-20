@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>雇用者情報</title>
+</head>
+<body>
+	<table border="1">
+	<tr>
+		<th>雇用者ID</th>
+		<th>雇用者名称</th>
+	</tr>
+	<tr th:each="emp : ${list}">
+		<td th:text="${emp.id}"></td>
+        <td th:text="${emp.name}"></td>
+	</tr>
+	</table>
+</body>
+</html>
